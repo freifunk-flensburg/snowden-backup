@@ -1,0 +1,15 @@
+;; db.0.129.10
+;; Reverselookupzone für update.freifunk-flensburg.de
+;;
+$TTL 2D
+@       IN      SOA     update.freifunk-flensburg.de. update.freifunk-flensburg.de. (
+                                2006032201      ; Serial
+                                        8H      ; Refresh
+                                        2H      ; Retry
+                                        4W      ; Expire
+                                        2D )    ; TTL Negative Cache
+
+@       IN      NS      update.freifunk-flensburg.de.
+
+1.1     IN      PTR     snowden.mesh.freifunk-flensburg.de.
+
