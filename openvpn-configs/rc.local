@@ -1,0 +1,6 @@
+ip rule add from all iif bat0 table 42
+ip route add unreachable default table 42
+ip route add 10.129.0.0/16 dev bat0 table 42
+#Änderungen für OVPN Intern testweise laut Snowdenbackup datein
+ip rule add from all iif tun1 table 42
+exit 0
